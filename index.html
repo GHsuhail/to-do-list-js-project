@@ -2,13 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel = "shortcut icon" type = "x-icon" href ="assets/Images/DEVLOGOcircle.png"> 
+    <link rel = "shortcut icon" type = "x-icon" href ="assets/list.png"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content = "Simple To Do List App">
     <link rel="stylesheet" href = "CSS/style.css"> 
 
     <title>To Do List</title>
 </head>
 <body>
+    <div class="main">
+        <div class="to-do-list">
+            <h3>Tasks Pannel <img src="assets/list.png" alt = "todo list"></h3>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add Task!">
+                <button class="add-btn">Add</button>
+            </div>
+                <ul id="tasks-list">
+                   
+                </ul>
+        </div>
+    </div>
 
+
+
+    <!--Footer-->
+    <footer class = "dev-info">
+
+        <div class = "dev-card">
+            <a href = "https://github.com/GHsuhail" target = "_blank">
+            <span class = "dev-logo">SB</span><p>Developed by Suhail Bakr</p>
+            </a>
+        </div>
+    
+</footer>
+ <script src = "JS/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansation&display=swap');
+
+*{
+    margin: 0 ; 
+    padding: 0 ; 
+    font-family:"Sansation", sans-serif; 
+    box-sizing: border-box;
+}
+.main
+{ 
+    width: 100%; 
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FBBC04,#dad592);
+    padding: 10px;
+}
+.to-do-list
+{
+    width: 100%;
+    max-width: 600px; 
+    background: #F4F4F4 ;
+    margin: 100px auto 30px; 
+    padding: 40px 20px 60px;
+    border-radius: 10px;
+   
+     
+}
+
+.to-do-list h3
+{ 
+    color: grey;
+    display:flex; 
+    align-items: center; 
+    
+
+}
+.to-do-list h3 img{
+    width: 30px; 
+    height: 30px;
+    
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px; 
+    padding-left: 20px; 
+    margin-bottom: 25px;
+    background-color: white;
+    margin-top: 10px;
+}
+input
+{ 
+    font-family: "Sansation", sans-serif;
+
+    flex: 1 ; 
+    border: none ; 
+    outline : none ; 
+    background: transparent;
+    padding: 8px;
+}
+
+button
+{ 
+    border: none ; 
+    outline : none ; 
+    cursor: pointer;
+    padding: 10px 30px;
+    background: #e9da0b;
+    border-radius: 40px;
+
+}
+
+
+ul li 
+{ 
+    list-style: none; 
+    font-family: "Sansation", sans-serif;
+    font-size: 16px;
+    padding : 12px 8px 12px 50px; 
+    user-select: none;
+    cursor: pointer;
+    position: relative; 
+
+}
+
+
+
+ul li::before
+{ 
+    content:""; 
+    position: absolute;
+    height:20px;
+    width:20px; 
+    border-radius: 50%;
+    background-image: url(../assets/unchecked.png);
+    background-size:cover;
+    background-position: center;
+    top: 12px; 
+    left:8px; 
+    
+}
+ul li span 
+{ 
+    position: absolute;
+    right: 0 ; 
+    top : 5px; 
+    width: 40px; 
+    height: 40px; 
+    font-size: 22px; 
+    color: darkslategrey;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+ul li span:hover
+{ 
+    background-color:lightgrey;
+    
+}
+ul li.checked
+{ 
+    color : #555;
+    text-decoration: line-through;
+
+}
+ul li.checked::before
+{ 
+    background-image: url(../assets/checked.png); 
+}
+
+
+.dev-info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    padding:  10px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .dev-card {
+    display: flex;
+    align-items: center;     
+    gap: 10px;                
+  }
+  
+  .dev-logo {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Nabla", system-ui;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 999px;      
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
